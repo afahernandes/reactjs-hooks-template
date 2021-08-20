@@ -7,16 +7,26 @@ import {
 class ExampleForm extends Component {
   constructor(props){
     super(props)
-    // init state attribute here
+    this.state={
+      fullname:"",
+      email:"",
+      password:"",
+    }
+    this.handleOnSubmit=this.handleOnSubmit.bind(this.state);
+    this.handleOnChange=this.handleOnChange.bind(this.state);
   }
 
   handleOnChange = (e) => {
-    // setState here
+   this.setState((preState)=>({
+     ...preState,
+     [e.target.name] : e.target.value
+   }));
   }
 
+
   handleOnSubmit = (e) => {
-    e.preventDefault()
-    //print state value with console.log here
+    e.preventDefault();
+    console.log(this.state)//print state value with console.log here
   }
 
   render(){
