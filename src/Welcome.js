@@ -5,6 +5,13 @@ export default class Welcome extends Component {
     //Create method DidMount inside it can print "Welcome Component Did Mount" here...
 
     //Create method WillUnmount inside it can print "Welcome Component  Will Unmount" here...
+    componentDidMount(){
+        console.log(" Welcome Mounted");
+    }
+    
+    componentWillUnmount(){
+        console.log("Greeting Unmonted");
+    }
 
     render() {
         return (
