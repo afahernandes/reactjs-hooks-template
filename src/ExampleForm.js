@@ -12,8 +12,8 @@ class ExampleForm extends Component {
       email:"",
       password:"",
     }
-    this.handleOnSubmit=this.handleOnSubmit.bind(this.state);
-    this.handleOnChange=this.handleOnChange.bind(this.state);
+    this.handleOnSubmit=this.handleOnSubmit.bind(this);
+    this.handleOnChange=this.handleOnChange.bind(this);
   }
 
   handleOnChange = (e) => {
