@@ -24,7 +24,7 @@ function App() {
     return () => {
       console.log("App Component will unmount");
     };
-  });
+  }, []);
 
  const handleChange = (e) => {
     setState({

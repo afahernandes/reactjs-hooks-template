@@ -1,8 +1,12 @@
 import { useEffect } from "react"; //import useEffect here
-
+import data from './data';
 export default function Welcome() {
-  useEffect(() => {
+   
+    useEffect(() => {
     console.log("Welcome COmponent didMount");
+    console.log(data);
+    console.log("data", data);
+   
     return () => {
       console.log("Welcome Component will unmount");
     };
